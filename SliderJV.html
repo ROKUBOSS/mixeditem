@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<title>
+JavaScript-Sliders
+</title>
+<style>
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+img{
+    background-color: transparent;
+}
+body{
+background-image: url(https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1600);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+</head>
+<body>
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+// LIST OF IMAGES
+path[0] = "https://c4.wallpaperflare.com/wallpaper/609/464/64/actress-saree-kajal-agarwal-indian-girls-1400x2104-people-actresses-hd-art-wallpaper-preview.jpg";
+path[1] = "https://c4.wallpaperflare.com/wallpaper/198/212/888/actress-indian-navel-saree-wallpaper-preview.jpg";
+path[2] = "https://c4.wallpaperflare.com/wallpaper/668/108/923/eva-green-women-actress-hollywood-wallpaper-preview.jpg";
+path[3] = "https://c4.wallpaperflare.com/wallpaper/891/335/685/female-celebrities-parineeti-chopra-wallpaper-preview.jpg";
+path[4] = "https://c4.wallpaperflare.com/wallpaper/871/916/905/tamil-actress-shruti-haasan-wallpaper-preview.jpg";
+path[5] = "https://c4.wallpaperflare.com/wallpaper/325/861/182/bollywood-celebrities-female-celebrities-wallpaper-preview.jpg";
+
+function swapImage()
+{
+document.slide.src = path[i];
+if(i < path.length - 1) i++; else i = 0;
+setTimeout("swapImage()",3000);
+}
+window.onload=swapImage;
+</script>
+<center>
+<img height="900" name="slide" src="Tulips.jpg" width="50%" />
+
+</center>   
+</body>
+</html>
